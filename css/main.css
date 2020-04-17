@@ -1,0 +1,316 @@
+body,html{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+
+@font-face{
+font-family: 'MuseoSansCyrl';
+src: url('../fonts/MuseoSansCyrl.eot');
+src: url('../fonts/MuseoSansCyrl.eot?iefix') format('eot'),
+url('../fonts/MuseoSansCyrl.woff') format('woff'),
+url('../fonts/MuseoSansCyrl.ttf') format('truetype'),
+url('../fonts/MuseoSansCyrl.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'MuseoSansCyrl-300';
+src: url('../fonts/MuseoSansCyrl-300.eot');
+src: url('../fonts/MuseoSansCyrl-300.eot?iefix') format('eot'),
+url('../fonts/MuseoSansCyrl-300.woff') format('woff'),
+url('../fonts/MuseoSansCyrl-300.ttf') format('truetype'),
+url('../fonts/MuseoSansCyrl-300.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'MuseoSansCyrl-900';
+src: url('../fonts/MuseoSansCyrl-900.eot');
+src: url('../fonts/MuseoSansCyrl-900.eot?iefix') format('eot'),
+url('../fonts/MuseoSansCyrl-900.woff') format('woff'),
+url('../fonts/MuseoSansCyrl-900.ttf') format('truetype'),
+url('../fonts/MuseoSansCyrl-900.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'Natasha';
+src: url('../fonts/Natasha.eot');
+src: url('../fonts/Natasha.eot?iefix') format('eot'),
+url('../fonts/Natasha.woff') format('woff'),
+url('../fonts/Natasha.ttf') format('truetype'),
+url('../fonts/Natasha.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+.clearfix:after{
+ content:'';
+ display:table;
+ width:100%;
+ clear:both;
+}
+.center{
+margin:0px auto;
+width: 85%;
+/*border: 2px solid aqua;*/
+}
+.f-left{
+	float: left;
+}
+.header{
+	background:  url(../img/header_bg.jpg) ;
+    /*height: 846px;*/
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.header-center{
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header__menu{
+	font-family: MuseoSansCyrl-900;
+	font-size: 13px;
+	padding: 40px 0px;
+    margin: 0px auto;
+}
+
+.header__menu-item{
+	width: fit-content;
+	display: block;
+	float: left;
+}
+
+.header__menu-item-href{
+	text-decoration: none;
+	color: white;
+}
+
+li.header__menu-item:nth-child(1){
+ color: silver;
+ font-family: MuseoSansCyrl;
+}
+
+li.header__menu-item:nth-child(2){
+ margin-right:175px;  
+}
+
+li.header__menu-item:nth-child(3){
+ margin-right:75px;  
+}
+
+li.header__menu-item:nth-child(4){
+ margin-right:75px;  
+}
+
+li.header__menu-item:nth-child(5){
+ margin-right:75px;  
+}
+
+li.header__menu-item:nth-child(6){
+ float: right;
+ font-family: MuseoSansCyrl-300;
+ color: silver;
+ border-bottom:1px solid silver;
+ padding-bottom: 5px;
+}
+
+.header__title{
+	padding-top: 20%;
+	width: fit-content;
+}
+
+.header__title-Natasha{
+font-family: Natasha;
+font-size: 49px;
+margin: 0px;
+text-align: center;
+}
+
+.header__title-100{
+font-family: MuseoSansCyrl;
+font-size: 29px;
+margin: 0px;
+text-align: center;
+}
+
+.content__my-info{
+	padding-top: 5%;
+}
+.content__my-info-title{
+	font-family: Natasha;
+    font-size: 29px;
+    margin: 0px;
+    padding-bottom: 5%;
+}
+.content__my-info-back{
+	width: 50%;
+	box-sizing: border-box;
+	padding-right:  10%;
+}
+.content__my-info-title2 {
+	font-family: Natasha;
+    font-size: 20px;
+    color: #888886FF;
+    margin: 0px;
+}
+.content__my-info-back-text{
+	font-family: MuseoSansCyrl-300;
+    font-size: 15px;
+    line-height:25px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.content__my-info-awards{
+	width: 50%;
+	
+}
+.content__my-info-awards-list{
+	padding: 0px;
+	margin:0px;
+}
+.content__my-info-awards-list-item{
+	float: left;
+	display: block;
+	width: 103px;
+	height: 103px;
+	background: url(../img/romb.png) ;
+	font-family: MuseoSansCyrl;
+    margin-right: 6%;
+	margin-bottom: 15%;
+	margin-top:10%;
+}
+
+.content__my-info-awards-list-item-p{
+	text-align: center;
+	line-height:70px;
+	font-size: 20px;
+	color: #3E6534FF ;
+
+}
+.content__my-info-awards-list-item-info{
+	text-align: center;
+	line-height:20px;
+	font-size: 14px;
+
+}
+.content__my-info-link{
+    padding-top: 25px;
+}
+.content__my-info-link-block{
+	margin-top: 5%;
+}
+.content__my-info-link-list{
+	padding: 0px;
+	margin:0px;
+}
+
+.content__my-info-link-list-item{
+	display: block;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+.content__my-info-link-href{
+	color: #3E6534FF ;
+	font-family: MuseoSansCyrl-300;
+}
+.content__my-info-link-logo{
+  height: 60px;
+  width: 60px;
+  background-color: #EEF1EDFF;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: #3E6534FF ;
+  line-height: 60px;
+}
+.content__my-info-link-write-text{
+	font-family: MuseoSansCyrl-300;
+	font-size: 14px;
+	margin:0px;
+	text-align: center;
+	line-height: 60px;
+	padding-left: 10px;
+}
+
+.content__my-info-scills-list{
+    padding: 0px;
+	margin: 0px;
+}
+.content__my-info-scills-list-item{
+	display: inline;
+	float: left;
+	background: url(../img/circle.png) no-repeat;
+	width: 200px;
+	height: 61px;
+	padding-right: 5%;
+}
+.content__my-info-scills-list-item-text{
+	float: left;
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-right: 40px; 
+	color:  #3E6534FF ;
+}
+
+.content__my-info-scills-list-item-text-info{
+ 	font-family: MuseoSansCyrl-900;
+	font-size: 13px;
+    margin-top: 20px;
+    color: #4B4C47FF
+}
+
+.content__my-info-work{
+  padding-top: 5%;
+}
+.content__my-info-work-list{
+	margin:0px;
+	padding: 0px;
+}
+.content__my-info-work-list-item{
+	width: 300px;
+	height: 300px;
+	display:block;
+	float: left;
+	margin-right: 5%;
+	position: relative;
+    box-sizing: border-box;
+}
+.watch{
+	color:white;
+}
+.overlay{
+	display: none;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	box-sizing: border-box;
+	background: rgba(0, 0, 0, 0.5);
+	padding-top: 150px;
+	color: white;
+	font-family: MuseoSansCyrl-300;
+}
+
+.content__my-info-work-list-item:hover .overlay{
+	display: block;
+}
+
+.content__my-info-bottom{
+  	font-family: MuseoSansCyrl-300;
+	font-size: 14px;
+	color: #4B4C47FF;
+	padding-top:5%;
+	padding-bottom: 5%;
+}
