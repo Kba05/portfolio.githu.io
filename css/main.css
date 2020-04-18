@@ -48,6 +48,8 @@ font-weight: normal;
 font-style: normal;
 }
 
+
+
 .clearfix:after{
  content:'';
  display:table;
@@ -80,7 +82,7 @@ width: 85%;
 .header__menu{
 	font-family: MuseoSansCyrl-900;
 	font-size: 13px;
-	padding: 40px 0px;
+	padding: 20px 0px;
     margin: 0px auto;
 }
 
@@ -88,20 +90,33 @@ width: 85%;
 	width: fit-content;
 	display: block;
 	float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    box-sizing: border-box;
 }
-
+.header__menu-item:hover{
+	background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+}
 .header__menu-item-href{
 	text-decoration: none;
 	color: white;
 }
 
-li.header__menu-item:nth-child(1){
+.my{
  color: silver;
  font-family: MuseoSansCyrl;
+ float: left;
+}
+
+li.header__menu-item:nth-child(1){
+ margin-right:220px;  
 }
 
 li.header__menu-item:nth-child(2){
- margin-right:175px;  
+ margin-right:75px;  
 }
 
 li.header__menu-item:nth-child(3){
@@ -113,19 +128,16 @@ li.header__menu-item:nth-child(4){
 }
 
 li.header__menu-item:nth-child(5){
- margin-right:75px;  
-}
-
-li.header__menu-item:nth-child(6){
  float: right;
  font-family: MuseoSansCyrl-300;
  color: silver;
  border-bottom:1px solid silver;
  padding-bottom: 5px;
+ 
 }
 
 .header__title{
-	padding-top: 20%;
+	padding-top: 15%;
 	width: fit-content;
 }
 
@@ -186,7 +198,7 @@ text-align: center;
 	height: 103px;
 	background: url(../img/romb.png) ;
 	font-family: MuseoSansCyrl;
-    margin-right: 6%;
+    margin-right: 10%;
 	margin-bottom: 15%;
 	margin-top:10%;
 }
@@ -251,23 +263,25 @@ text-align: center;
 	display: inline;
 	float: left;
 	background: url(../img/circle.png) no-repeat;
-	width: 200px;
+	width: 170px;
 	height: 61px;
-	padding-right: 5%;
+	padding-right: 7%;
 }
 .content__my-info-scills-list-item-text{
 	float: left;
 	margin-top: 20px;
-	margin-left: 15px;
-	margin-right: 40px; 
+	margin-left: 18px;
 	color:  #3E6534FF ;
+	text-align: center;
 }
 
 .content__my-info-scills-list-item-text-info{
+ 	float: left;
  	font-family: MuseoSansCyrl-900;
 	font-size: 13px;
     margin-top: 20px;
-    color: #4B4C47FF
+    margin-left: 25px;
+    color: #4B4C47FF;
 }
 
 .content__my-info-work{
@@ -282,9 +296,13 @@ text-align: center;
 	height: 300px;
 	display:block;
 	float: left;
-	margin-right: 5%;
+	margin-right: 3%;
 	position: relative;
     box-sizing: border-box;
+}
+.content__my-info-work-list-item-img{
+	height: 100%;
+	width: 100%;
 }
 .watch{
 	color:white;
@@ -313,4 +331,111 @@ text-align: center;
 	color: #4B4C47FF;
 	padding-top:5%;
 	padding-bottom: 5%;
+}
+
+@media screen and (max-width:1024px) {
+
+	li.header__menu-item:nth-child(1) {
+    margin-right: 130px;
+   }
+
+   .header__title {
+    padding-top: 10%;
+  }
+
+ .content__my-info-awards-list-item{
+    margin-right: 5%;
+}
+ .content__my-info-work-list-item {
+	margin-bottom: 10px;
+	width: 260px;
+	height: 260px;
+}
+  .content__my-info-scills-list-item{
+	width: 175px;
+	padding-right: 4.5%;
+}
+  .content__my-info-scills-list-item-text-info {
+    margin-left: 25px;
+}
+
+}
+
+@media screen and (max-width:768px) {
+
+ li.header__menu-item:nth-child(1){
+ margin-right:60px;  
+}
+
+li.header__menu-item:nth-child(2){
+ margin-right:25px;  
+}
+
+li.header__menu-item:nth-child(3){
+ margin-right:25px;  
+}
+
+li.header__menu-item:nth-child(4){
+ margin-right:0px;  
+}
+
+.content__my-info-back{
+	width: 40%;
+}
+.content__my-info-awards {
+    width: 60%;
+}
+
+.content__my-info-scills-list-item{
+	width: 155px;
+	padding-right: 1%;
+}
+.content__my-info-scills-list-item-text-info {
+    margin-left: 15px;
+}
+.content__my-info-work-list-item {
+	margin-bottom: 10px;
+	width: 190px;
+	height: 190px;
+}
+}
+
+@media screen and (max-width:425px) {
+  .header__menu {
+    padding: 15px 0px;
+}
+  .header__menu-item {
+    float: none;
+    margin-bottom: 8px;
+    padding: 5px 5px 5px 5px;
+}
+
+
+li.header__menu-item:nth-child(5) {
+	float: none;
+}
+.header__title {
+    padding-top: 0;
+}
+.content__my-info-awards-list-item {
+    margin-bottom: 20%;
+}
+
+.content__my-info-back {
+    width: 50%;
+}
+.content__my-info-awards {
+    width: 50%;
+}
+.content__my-info-scills-list-item {
+    padding-right: 4%;
+    padding-bottom: 4%;
+}
+.content__my-info-work-list{
+	width: fit-content;
+}
+.content__my-info-work-list-item {
+    width: 300px;
+    height: 300px;
+}
 }
